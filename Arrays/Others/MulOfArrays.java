@@ -13,6 +13,8 @@ public class MulOfArrays {
     }
   }
 
+
+
   public static void main(String[] args) {
     MulOfArrays m = new MulOfArrays();
     int alen, blen;
