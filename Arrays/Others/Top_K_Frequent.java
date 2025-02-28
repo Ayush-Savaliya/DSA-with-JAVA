@@ -29,7 +29,7 @@ public class Top_K_Frequent {
     entryList.sort(Map.Entry.comparingByValue());
 
     for (int i = 0; i < k; i++) {
-      ans[i] = entryList.get(m1.size()-1-i).getKey();
+      ans[i] = entryList.get(m1.size() - 1 - i).getKey();
       System.out.println(ans[i]);
     }
     System.out.println(entryList);
@@ -39,7 +39,7 @@ public class Top_K_Frequent {
 
   public static void main(String[] args) {
     int[] nums = { 1, 2, 5, 5, 7, 7 };
-    int k = 3;  
+    int k = 3;
     int[] ans = (topKFrequent(nums, k));
     for (int i : ans) {
       System.out.println(i);
