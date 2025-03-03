@@ -14,7 +14,7 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 public class Rotate_Image {
   public static void rotate(int[][] matrix) {
     for (int i = 0; i < matrix.length; i++) {
-      for (int j = i; j < matrix.length; j++) {
+      for (int j = i+1; j < matrix.length; j++) {
           int temp = matrix[j][i];
           matrix[j][i] = matrix[i][j];
           matrix[i][j] = temp;
@@ -35,8 +35,6 @@ public class Rotate_Image {
       System.err.println();
     }
     System.err.println();
-
-
   }
   public static void main(String[] args) {
     int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
