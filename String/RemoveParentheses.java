@@ -1,6 +1,6 @@
 public class RemoveParentheses {
   public static void main(String[] args) {
-    String input = "))(a)(";
+    String input = "))()a)(";
     String result = minRemoveToMakeValid(input);
     System.out.println(result);
   }
